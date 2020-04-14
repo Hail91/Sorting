@@ -13,7 +13,7 @@ def selection_sort( arr ):
     for i in range(0, len(arr) - 1):    # Loop through the array up until the last element.
         cur_index = i                   # Assign the current index of the loop to cur_index
         smallest_index = cur_index      # Assign the cur_index to the smallest_index variable. 
-        for x in range(i+1, len(arr)):  # Loop over the array again, but starting at the current index position + 1. (checking the next element to the right)
+        for x in range(i+1, len(arr)):  # Loop over the array again, but starting at the current index position + 1. (checking all the elements to the right)
             if arr[x] < arr[smallest_index]:  # if arr value at index position 'x' is 'less than' arr value at index position 'smallest_index', then...
                 smallest_index = x            # Assign the value of index position 'x' to smallest_index variable
         arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index] # Swap cur_index and smallest_index values with the new values.        
